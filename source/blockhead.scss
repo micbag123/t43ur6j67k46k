@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url(../source/animation.css);
+.dron__phantom__opus {
+    background: #000;
+    width: 100%;
+    height: 80%;
+}
+.dron__phantom__opus__row {
+    width: 100%;
+    display: flex;
+
+}
+
+//  БЛОК МЕНЮ
+.dron__phantom__opus__menu {
+    width: 100%;
+    height: 10%;
+    color: rgb(250, 249, 249);
+    margin: 0px 15%;
+}
+.dron__phantom__opus__row{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.dron__phantom__opus__icondron {
+    background: url(../img/icondron.png) left / 40px 40px no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 0.5% 0px 0px 0px;
+}
+.texta {
+    @media (max-width: 767px) {
+        font-size: 8px;
+     
+    }
+    font-size: 20px;
+    font-family: "Quicksand";
+    text-transform: uppercase;
+}
+.dron__phantom__opus__a__products {
+    transform: translateX();
+    position: relative;
+    top: 30px;
+}
+.dron__phantom__opus__a__products__line__black{
+    transform: translatey( -60px );
+    height: 60px; 
+    opacity: 0;
+    &:hover{
+    animation: menu__head 1s;
+    animation-fill-mode: forwards;
+    }
+}
+.dron__phantom__opus__a__products__line{
+    position: relative;
+    top: 62px;
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    &:hover{
+    animation: menu__head 2s;
+    }
+}
+.dron__phantom__opus__iconSearch {
+    background: url(../img/iconserch.png) right / 30px 30px no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 0px -2%;
+}    
+//  БЛОК МЕНЮ
+
+.dron__phantom__opus__title {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    word-spacing: 10px;
+}
+.dron__phantom__opus__text {
+    font-size: 20px;
+    line-height: 27px;
+    font-family: "poppins";
+    font-weight: 300;
+    color: #969696;
+    width: 100%;
+    text-align: center;
+}
+
+
+.opus__button{
+    position: relative;
+    background: rgb(0, 0, 0);
+    color: #2196f3;
+    padding: 15px 30px;
+    letter-spacing: 3px;
+    font-family: "poppins";
+    text-transform: uppercase;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.button{
+    margin: 10px 30px;
+    padding: 15px 30px; 
+    display: flex;
+    justify-content: center;
+}
+.opus__button__line {
+    position: absolute;
+    display: block;
+}
+.opus__button--top {
+    left: -100%;
+    top: 0px;
+    width: 100%;
+    height: 2px;
+    background: rgb(0,3,51);
+    background: rgb(114,114,114);
+    background: -moz-linear-gradient(left,  rgb(114,114,114) 0%, rgb(66,66,66) 0%, rgb(33,150,243) 100%);
+    background: -webkit-linear-gradient(left,  rgb(114,114,114) 0%,rgb(66,66,66) 0%,rgb(33,150,243) 100%);
+    background: linear-gradient(to right,  rgb(114,114,114) 0%,rgb(66,66,66) 0%,rgb(33,150,243) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#2196f3',GradientType=1 );
+}
+.opus__button:hover .opus__button--top{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.opus__button--bottom {
+    left: 100%;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: rgb(33,150,243);
+    background: -moz-linear-gradient(left,  rgb(33,150,243) 0%, rgb(66,66,66) 100%);
+    background: -webkit-linear-gradient(left,  rgb(33,150,243) 0%,rgb(66,66,66) 100%);
+    background: linear-gradient(to right,  rgb(33,150,243) 0%,rgb(66,66,66) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2196f3', endColorstr='#424242',GradientType=1 );
+    
+}
+.opus__button:hover .opus__button--bottom{
+    left: -100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.opus__button--right{
+    right: 0;
+    bottom: 100%;
+    width: 2px;
+    height: 100%;
+    background: rgb(66,66,66);
+background: -moz-linear-gradient(top,  rgb(66,66,66) 0%, rgb(33,150,243) 100%);
+background: -webkit-linear-gradient(top,  rgb(66,66,66) 0%,rgb(33,150,243) 100%);
+background: linear-gradient(to bottom,  rgb(66,66,66) 0%,rgb(33,150,243) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#2196f3',GradientType=0 );
+
+     
+}
+.opus__button:hover .opus__button--right{
+    bottom: -100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+.opus__button--left{
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: rgb(33,150,243);
+    background: -moz-linear-gradient(top,  rgb(33,150,243) 0%, rgb(66,66,66) 100%, rgb(33,150,243) 100%);
+    background: -webkit-linear-gradient(top,  rgb(33,150,243) 0%,rgb(66,66,66) 100%,rgb(33,150,243) 100%);
+    background: linear-gradient(to bottom,  rgb(33,150,243) 0%,rgb(66,66,66) 100%,rgb(33,150,243) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2196f3', endColorstr='#2196f3',GradientType=0 );
+}
+.opus__button:hover .opus__button--left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+.opus__button:hover{
+    box-shadow: 0px 0px 10px 5px rgb(33,150,243);
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+
+
+.dron__phantom__opus__img {
+
+    margin: 0px auto;
+    background: url(../img/fpv.png) top / 403px 274px no-repeat;
+    width: 403px;
+    height: 274px;
+}

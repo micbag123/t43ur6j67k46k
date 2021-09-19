@@ -1,0 +1,63 @@
+@-webkit-keyframes menu__head {
+  0% {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    width: 100%; }
+  100% {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    opacity: 1; } }
+
+@keyframes menu__head {
+  0% {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    width: 100%; }
+  100% {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    opacity: 1; } }
+
+@-webkit-keyframes bth__head__left {
+  0% {
+    position: relative;
+    top: 50px; }
+  100% {
+    position: relative;
+    top: 0px; } }
+
+@keyframes bth__head__left {
+  0% {
+    position: relative;
+    top: 50px; }
+  100% {
+    position: relative;
+    top: 0px; } }
+
+@-webkit-keyframes bth__head__linebottom {
+  0% { }
+  100% { } }
+
+@keyframes bth__head__linebottom {
+  0% { }
+  100% { } }
+
+@-webkit-keyframes bth__head__linetop {
+  0% { }
+  100% { } }
+
+@keyframes bth__head__linetop {
+  0% { }
+  100% { } }
+
+@-webkit-keyframes bth__head__right {
+  0% { }
+  100% { } }
+
+@keyframes bth__head__right {
+  0% { }
+  100% { } }
